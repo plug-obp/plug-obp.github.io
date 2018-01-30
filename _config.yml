@@ -6,9 +6,7 @@ theme: minima
 baseurl: ""
 url: "http://plug-obp.github.io"
 
-gems:
-  - minima
-
 markdown: kramdown
 permalink: pretty
 highligher: rouge
+
