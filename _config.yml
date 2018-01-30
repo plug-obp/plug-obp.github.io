@@ -3,6 +3,12 @@ description: Runtime for models
 google_analytics: 
 show_downloads: false
 theme: jekyll-theme-minimal
+baseurl: ""
+url: "http://plug-obp.github.io"
 
 gems:
   - jekyll-mentions
+
+markdown: kramdown
+permalink: pretty
+highligher: rouge
