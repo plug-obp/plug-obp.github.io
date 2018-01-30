@@ -1,8 +1,8 @@
 ---
 layout: home
+title: home
 ---
 
-## The modular verifier
 
 Runtime for models
 
