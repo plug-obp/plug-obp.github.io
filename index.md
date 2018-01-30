@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Plug-OBP
+## The modular verifier
 
 Runtime for models
 
