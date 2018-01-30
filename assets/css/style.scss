@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 70%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
