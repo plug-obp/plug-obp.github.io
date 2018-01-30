@@ -9,4 +9,7 @@ url: "http://plug-obp.github.io"
 markdown: kramdown
 permalink: pretty
 highligher: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:repos
+title: repos
 ---
 
 # Plug repositories
