@@ -2,12 +2,12 @@ title: Plug-obp
 description: Runtime for models
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-minima
+theme: minima
 baseurl: ""
 url: "http://plug-obp.github.io"
 
 gems:
-  - jekyll-mentions
+  - minima
 
 markdown: kramdown
 permalink: pretty
