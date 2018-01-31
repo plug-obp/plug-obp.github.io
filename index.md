@@ -7,7 +7,7 @@ title: home
 **Daily Build**
 {: .download}
 
-# Runtime for models
+# Modularity Meets xDSL Dynamics
 
 ![simu](images/simu.png){:height="600px" class="center-image"}
 
