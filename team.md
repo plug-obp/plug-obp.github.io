@@ -14,4 +14,4 @@ title: team
 
 # Past Members
 
-| ![Nicolas](/images/people/nicolas_gunepin.jpg){:class="avatar"} [Nicolas GUNEPIN](https://www.linkedin.com/in/nicolas-gunepin-07571714a/)
+| ![Michael](/images/people/michael_rigaud.jpg){:class="avatar"} Michael RIGAUD | ![Nicolas](/images/people/nicolas_gunepin.jpg){:class="avatar"} [Nicolas GUNEPIN](https://www.linkedin.com/in/nicolas-gunepin-07571714a/)
