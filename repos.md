@@ -11,11 +11,11 @@ title: dev-repos
 
 ## Core
 
-[plug-core](https://CipT@bitbucket.org/plug-team/plug-core.git)
+[plug-core](https://bitbucket.org/plug-team/plug-core.git)
 
 ### Plugin System
 
-[plug-module-loading](https://CipT@bitbucket.org/plug-team/plug-module-loading)
+[plug-module-loading](https://bitbucket.org/plug-team/plug-module-loading)
 
 ### Remotes and Alien connection infrastructure
 
@@ -38,21 +38,21 @@ Multiple possibilities to study: socket (TCP, UDP, UART), serial, REST, memory-m
 
 ## UI
 
-[plug-core-ui](https://CipT@bitbucket.org/plug-team/plug-core-ui)
+[plug-core-ui](https://bitbucket.org/plug-team/plug-core-ui)
 
-[plug-simulation-fx-ui](https://CipT@bitbucket.org/plug-team/plug-simulation-fx-ui)
+[plug-simulation-fx-ui](https://bitbucket.org/plug-team/plug-simulation-fx-ui)
 
-[plug-editor-fx](https://CipT@bitbucket.org/plug-team/plug-editor-fx.git)
+[plug-editor-fx](https://bitbucket.org/plug-team/plug-editor-fx.git)
 
 ### Specialized UI for remote TUML (Valentin Thesis)
 
-[plug-runtime-viatcp-ui](https://CipT@bitbucket.org/plug-team/plug-runtime-viatcp-ui)
+[plug-runtime-viatcp-ui](https://bitbucket.org/plug-team/plug-runtime-viatcp-ui)
 
 ## Property Languages
 
-[jicpl](https://CipT@bitbucket.org/plug-team/jicpl.git)
+[jicpl](https://bitbucket.org/plug-team/jicpl.git)
 
-[plug-runtime-buchi](https://CipT@bitbucket.org/plug-team/plug-runtime-buchi)
+[plug-runtime-buchi](https://bitbucket.org/plug-team/plug-runtime-buchi)
 
 ## Languages & Runtimes
 
@@ -60,19 +60,19 @@ Multiple possibilities to study: socket (TCP, UDP, UART), serial, REST, memory-m
 
 #### Generic System Composition Runtime [Asynchronous]
 
-[plug-runtime-composite](https://CipT@bitbucket.org/plug-team/plug-runtime-composite)
+[plug-runtime-composite](https://bitbucket.org/plug-team/plug-runtime-composite)
 
 #### Synchronous Composition of Buchi & Kripke Runtimes
 
-[plug-runtime-buchikripke](https://CipT@bitbucket.org/plug-team/plug-runtime-buchikripke)
+[plug-runtime-buchikripke](https://bitbucket.org/plug-team/plug-runtime-buchikripke)
 
 ### Leaf Runtimes
 
 #### Fiacre
 
-[fiacre-language](https://CipT@bitbucket.org/CipT/fiacre-language.git) *(very experimental, new Fiacre parser, compiler infrastructure)*
+[fiacre-language](https://bitbucket.org/CipT/fiacre-language.git) *(very experimental, new Fiacre parser, compiler infrastructure)*
 
-[plug-runtime-LFiacre](https://CipT@bitbucket.org/plug-team/plug-runtime-LFiacre) *(the interface with the Fiacre implementation in OBP)*
+[plug-runtime-LFiacre](https://bitbucket.org/plug-team/plug-runtime-LFiacre) *(the interface with the Fiacre implementation in OBP)*
 
 #### BPMN
 
@@ -84,65 +84,65 @@ Multiple possibilities to study: socket (TCP, UDP, UART), serial, REST, memory-m
 
 [ClockRDL](https://github.com/teodorov/ClockRDL.git)
 
-[plug-runtime-LClockRDL](https://CipT@bitbucket.org/plug-team/plug-runtime-LClockRDL)
+[plug-runtime-LClockRDL](https://bitbucket.org/plug-team/plug-runtime-LClockRDL)
 
 #### SpinJa
 
-[plug-runtime-LSpinJa](https://CipT@bitbucket.org/plug-team/plug-runtime-LSpinJa)
+[plug-runtime-LSpinJa](https://bitbucket.org/plug-team/plug-runtime-LSpinJa)
 
 #### TLA
 
-[plug-runtime-LTLA](https://CipT@bitbucket.org/plug-team/plug-runtime-LTLA)
+[plug-runtime-LTLA](https://bitbucket.org/plug-team/plug-runtime-LTLA)
 
 #### tUML
 
-[plug-runtime-LTUML](https://CipT@bitbucket.org/plug-team/plug-runtime-LTUML)
+[plug-runtime-LTUML](https://bitbucket.org/plug-team/plug-runtime-LTUML)
 
-[moc-os](http://CiprianTeodorov@trame.eseo.fr/git/moc-os/) *(the repository with the xtend tuml interpreter)*
+[moc-os](http://trame.eseo.fr/git/moc-os/) *(the repository with the xtend tuml interpreter)*
 
-[uml-interpreter-c](http://CiprianTeodorov@trame.eseo.fr/git/uml-interpreter-c/) *(the repository of the BareMetal UML interpreter)*
+[uml-interpreter-c](http://trame.eseo.fr/git/uml-interpreter-c/) *(the repository of the BareMetal UML interpreter)*
 
 #### Random
 
-[plug-runtime-random](https://CipT@bitbucket.org/plug-team/plug-runtime-random)
+[plug-runtime-random](https://bitbucket.org/plug-team/plug-runtime-random)
 
 #### Guard Action
 
-[plug-runtime-LGuardAction](https://CipT@bitbucket.org/plug-team/plug-runtime-LGuardAction)
+[plug-runtime-LGuardAction](https://bitbucket.org/plug-team/plug-runtime-LGuardAction)
 
 #### Explicit
 
-[plug-runtime-lexplicit](https://CipT@bitbucket.org/plug-team/plug-runtime-lexplicit)
+[plug-runtime-lexplicit](https://bitbucket.org/plug-team/plug-runtime-lexplicit)
 
 #### TimeSquare
 
-[plug-runtime-ltimesquare](https://CipT@bitbucket.org/plug-team/plug-runtime-ltimesquare)
+[plug-runtime-ltimesquare](https://bitbucket.org/plug-team/plug-runtime-ltimesquare)
 
 [plug-runtime-lstate_event](https://github.com/plug-obp/plug-runtime-lstate_event.git)
 
 #### Environment specification language
 
-[envlang](https://CipT@bitbucket.org/CipT/envlang.git) *(cyclic CDL, the eXtended Guide Description Language xGDL )*
+[envlang](https://bitbucket.org/CipT/envlang.git) *(cyclic CDL, the eXtended Guide Description Language xGDL )*
 
 ## Reutilisable Libraries that might help in the implementation of language runtimes
 
-[plug-synchronization](https://CipT@bitbucket.org/plug-team/plug-synchronization)
+[plug-synchronization](https://bitbucket.org/plug-team/plug-synchronization)
 
 ## Exploration algorithms
 
-[plug-pastfreeze](https://CipT@bitbucket.org/plug-team/plug-pastfreeze)
+[plug-pastfreeze](https://bitbucket.org/plug-team/plug-pastfreeze)
 
 ## Examples, Studies & Demo Runtimes
 
 ### First simple verification API tests
 
-[plug-runtime-buchi-fcr-tests](https://CipT@bitbucket.org/plug-team/plug-runtime-buchi-fcr-tests.git)
+[plug-runtime-buchi-fcr-tests](https://bitbucket.org/plug-team/plug-runtime-buchi-fcr-tests.git)
 
 [plug-runtime-buchi-viatcp-tests](https://github.com/plug-obp/plug-runtime-buchi-viatcp-tests.git)
 
 ### First simple simulation interface (swing)
 
-[plug-simulation-ui](https://CipT@bitbucket.org/plug-team/plug-simulation-ui)
+[plug-simulation-ui](https://bitbucket.org/plug-team/plug-simulation-ui)
 
 ### Study of the integration with OBEO UML Designer
 
@@ -162,15 +162,15 @@ A gradle plugin for java generation from ecore:
 
 [Ecore2JavaGradle](https://github.com/teodorov/Ecore2JavaGradle.git)
 
-[plug-devel](https://CipT@bitbucket.org/plug-team/plug-devel)
+[plug-devel](https://bitbucket.org/plug-team/plug-devel)
 
 ## Should not exist
 
 The things in the following repositories should be moved in specialized repositories, because they are (should be) generic.
 
-[plug-utils](https://CipT@bitbucket.org/plug-team/plug-utils)
+[plug-utils](https://bitbucket.org/plug-team/plug-utils)
 
-[plug-utils-fx](https://CipT@bitbucket.org/plug-team/plug-utils-fx)
+[plug-utils-fx](https://bitbucket.org/plug-team/plug-utils-fx)
 
 ## Other related repositories
 
