@@ -4,6 +4,7 @@
 
 @import "minima";
 
+//for the team images
 .avatar {
     width: 80px;
     height: 80px;
@@ -18,7 +19,42 @@
     display: block;
 }
 
+//for the papers page
 .paper-icon {
     float: left;
     margin-right: 10px;
+}
+
+//for the download buttons on the homepage
+.download {
+    float: right;
+    text-align: center;
+    
+}
+.download li {
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-bottom: 1px solid #e0e0e0;
+}
+.download li:last-child {
+    border-bottom: none;
+}
+
+ul.download {
+    list-style: none;
+    border: 5px;
+   
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background: #f4f4f4;
+}
+.download a {
+    float: top;
+    display:block;
+    margin-bottom:-5px;
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+}
+.download a:hover {
+    font-weight: bold;
 }
