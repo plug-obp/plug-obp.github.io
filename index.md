@@ -11,7 +11,6 @@ title: home
 
 **Modularity Meets xDSL Dynamics**
 
-The modular Plug infra-structure allows to simply implement DSLs semantics.
-It also provides advanced tools to debug, simulate and model-check your DSL without any transformation.
+The modular Plug infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
 ![Verification View](/images/obp2/0.0.4/VerificationView.png){:height="600px" class="center-image"}
