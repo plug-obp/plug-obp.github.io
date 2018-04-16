@@ -3,7 +3,6 @@ layout: home
 title: home
 ---
 
-
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-all-0.0.3.zip)
 **Version 0.0.3**
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)
@@ -12,10 +11,7 @@ title: home
 
 **Modularity Meets xDSL Dynamics**
 
-# Plug-OBP for Fiacre and LTL
+The modular Plug infra-structure allows to simply implement DSLs semantics.
+It also provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
-![simu](images/obp2/VerificationView.png){:height="600px" class="center-image"}
-
-![simu](images/obp2/SimulationView.png){:height="600px" class="center-image"}
-
-![simu](images/obp2/CounterExample.png){:height="600px" class="center-image"}
+![Verification View](/images/obp2/0.0.4/VerificationView.png){:height="600px" class="center-image"}
