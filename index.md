@@ -13,7 +13,7 @@ title: home
 
 The modular Plug infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
-<video src="/images/obp2/demo.mp4" height="600px" autoplay loop muted playsinline></video>
+<video src="/images/obp2/demo.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
 
 <!-- 
 ![Verification View](/images/obp2/0.0.4/VerificationView.png){:height="600px" class="center-image"}
