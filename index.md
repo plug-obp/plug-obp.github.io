@@ -7,6 +7,8 @@ title: home
 **Version 0.0.4**
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)
 **Daily Build**
+- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily.zip)
+**Daily Build Mac**
 {: .download}
 
 **Modularity Meets xDSL Dynamics**
