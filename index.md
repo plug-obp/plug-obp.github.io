@@ -1,6 +1,7 @@
 ---
 layout: home
 title: home
+order: 1
 ---
 
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.4.zip)
