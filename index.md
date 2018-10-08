@@ -7,9 +7,9 @@ order: 1
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.4.zip)
 **Version 0.0.4**
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)
-**OBP2 Daily Build**
+**OBP2 Daily**
 - [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)
-**Simulator Daily Build**
+**Simulator Daily**
 {: .download}
 
 **Modularity Meets xDSL Dynamics**
