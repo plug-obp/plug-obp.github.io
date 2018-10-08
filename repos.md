@@ -18,7 +18,7 @@ order: 1000
     - UI:
         - [plug-utils-fx](https://bitbucket.org/plug-team/plug-utils-fx)
         - [plug-core-ui](https://bitbucket.org/plug-team/plug-core-ui)
-        - [plug-editor-fx](https://bitbucket.org/plug-team/plug-editor-fx.git)
+        - @Deprecated [plug-editor-fx](https://bitbucket.org/plug-team/plug-editor-fx.git)
     - Properties:
         - [jicpl](https://bitbucket.org/plug-team/jicpl.git)
         - [plug-runtime-buchi](https://bitbucket.org/plug-team/plug-runtime-buchi)
@@ -55,8 +55,8 @@ Multiple possibilities to study: socket (TCP, UDP, UART), serial, REST, memory-m
 ## UI
 
 - [plug-core-ui](https://bitbucket.org/plug-team/plug-core-ui)
-- [plug-simulation-fx-ui](https://bitbucket.org/plug-team/plug-simulation-fx-ui)
-- [plug-editor-fx](https://bitbucket.org/plug-team/plug-editor-fx.git)
+- @Deprecated [plug-simulation-fx-ui](https://bitbucket.org/plug-team/plug-simulation-fx-ui)
+- @Deprecated [plug-editor-fx](https://bitbucket.org/plug-team/plug-editor-fx.git)
 
 ### Specialized UI for remote TUML (Valentin Thesis)
 
