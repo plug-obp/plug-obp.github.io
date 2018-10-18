@@ -1,7 +1,5 @@
 ---
 layout: page
-title: dev-repos
-order: 1000
 ---
 
 # Plug repositories
