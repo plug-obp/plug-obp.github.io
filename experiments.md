@@ -6,6 +6,10 @@ order: 4
 
 # Some random experiments
 
+# TLA+ Simulation
+
+<video src="/assets/videos/tlaplus_simu.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
+
 # Projet DSimulator -- Michael Rigaud
 
 UML-DSimulator is a simulator plugin for UML Designer.
