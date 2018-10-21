@@ -8,7 +8,8 @@ order: 4
 
 # TLA+ Simulation
 
-<video src="/assets/videos/tlaplus_simu.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
+<video src="/assets/videos/tlaplus_simu.mp4" width="560px" autoplay loop muted playsinline class="center-image"></video>
+
 
 # Projet DSimulator -- Michael Rigaud
 
