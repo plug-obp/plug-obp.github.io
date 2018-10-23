@@ -1,5 +1,7 @@
 ---
 layout: page
+title: repos
+order: 6
 ---
 
 # Plug repositories
