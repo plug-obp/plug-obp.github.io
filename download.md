@@ -25,6 +25,7 @@ Simulation :
 
 | OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
 | Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
 
 # v0.0.5
 
