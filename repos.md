@@ -1,7 +1,7 @@
 ---
 layout: page
 title: repos
-order: 6
+order: 7
 ---
 
 # Plug repositories
@@ -76,7 +76,7 @@ Multiple possibilities to study: socket (TCP, UDP, UART), serial, REST, memory-m
 
 ### Leaf Runtimes
 
-- Fiacre: 
+- Fiacre:
     - [fiacre-language](https://bitbucket.org/CipT/fiacre-language.git) *(very experimental, new Fiacre parser, compiler infrastructure)*
     - [plug-runtime-LFiacre](https://bitbucket.org/plug-team/plug-runtime-LFiacre) *(the interface with the Fiacre implementation in OBP)*
 - BPMN:

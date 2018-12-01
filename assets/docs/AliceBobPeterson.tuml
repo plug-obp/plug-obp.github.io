@@ -1,0 +1,88 @@
+model AliceBob1 with(public deployment) {
+
+	primitiveType Integer;
+	primitiveType Boolean;
+
+	package deployment imports bsp_smt32, system {
+
+		instance instSUS of SUS {
+
+		}
+	}
+
+	package bsp_meta imports system {
+
+	}
+
+	package bsp_smt32 imports bsp_meta  {
+
+	}
+
+	package system imports bsp_meta {
+
+		class SUS {
+			public composite alice[1-1] : Alice;
+			public composite bob[1-1] : Bob;
+			public composite dataManager[1-1] : DataManager;
+
+			connector "c1" : Alice_Bob between bob and alice;
+			connector "c2" : DataManager_Alice between dataManager and alice;
+			connector "c3" : DataManager_Bob between dataManager and bob;
+		}
+
+		association Alice_Bob {
+			bob[1-1] : Bob in Alice_Bob;
+			alice[1-1] : Alice in Alice_Bob;
+		}
+
+		association DataManager_Alice {
+			alice[1-1] : Alice in DataManager_Alice;
+			dataManager[1-1] : DataManager in DataManager_Alice;
+		}
+
+		association DataManager_Bob {
+			bob[1-1] : Bob in DataManager_Bob;
+			dataManager[1-1] : DataManager in DataManager_Bob;
+		}
+
+
+		class |Alice| behavesAs SM {
+
+			stateMachine SM {
+				region R {
+					Initial -> I; 
+					I -> W : /
+						opaqueBehavior = 'dataManager.flagAlice = 1; dataManager.turn = 1;' in C;;
+					W -> CS: [constraint "" is opaqueExpression = 'dataManager.turn == 0 || dataManager.flagBob == 0' in C;] / ;
+					CS -> I: /
+						opaqueBehavior = 'dataManager.flagAlice = 0;' in C;;
+					initial pseudoState Initial;
+				}
+			}
+		}
+
+		class |Bob| behavesAs SM {
+
+			stateMachine SM {
+				region R {
+					Initial -> I; 
+					I -> W : /
+						opaqueBehavior = 'dataManager.flagBob = 1; dataManager.turn = 0;' in C;;
+					W -> CS: [constraint "" is opaqueExpression = 'dataManager.turn == 1 || dataManager.flagAlice == 0' in C;] / ;
+					CS -> I: /
+						opaqueBehavior = 'dataManager.flagBob = 0;' in C;;
+					initial pseudoState Initial;
+				}
+			}
+		}
+
+
+		class DataManager {
+			private flagAlice[1-1] : Boolean;
+			private flagBob[1-1] : Boolean;
+			private turn[1-1] : Integer;
+		}
+
+
+	}
+}
