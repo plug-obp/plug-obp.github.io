@@ -31,7 +31,7 @@ Simulation :
 
 Various small improvements
 
-| OBP2 v0.0.5 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.4.zip)] | [[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
+| OBP2 v0.0.5 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.5.zip)] | [[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
 
 # v0.0.4
 
