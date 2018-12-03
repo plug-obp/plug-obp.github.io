@@ -23,7 +23,7 @@ Simulation :
 - Added watch expressions on the configurations
 - *go until true/false* for groups of watch expressions
 
-| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily.zip)]
 | Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily.zip)]
 | OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
 
@@ -31,7 +31,7 @@ Simulation :
 
 Various small improvements
 
-| OBP2 v0.0.5 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.4.zip)] | [[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
+| OBP2 v0.0.5 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.5.zip)] | [[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
 
 # v0.0.4
 
