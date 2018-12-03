@@ -45,14 +45,6 @@ Once verified, the same couple (model + interpreter) can be deployed on the embe
 
 ### Useful Links
 
-
-* Download
-  * | OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
-
-
-* [Installation Manual](/assets/docs/EMI_InstallationManual.pdf)
-
-
 * Examples of models written in tUML, a textual formalism for UML:
   * [Peterson algortihm](/assets/docs/AliceBobPeterson.tuml)
   * [Level crossing](/assets/docs/LevelCrossing.tuml)
