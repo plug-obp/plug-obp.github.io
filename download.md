@@ -6,11 +6,17 @@ order: 2
 
 # Daily Build
 
-Big refactoring of the user interface.
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
+
+# v0.0.6
+
+Refactoring of the user interface.
+Define a model in the editor directly (for textual specification languages only)
 
 Model-checking :
 
-- it is possible to define a model in the editor directly (for textual specification languages only)
 - added a button to run all *verification tasks*
 - CSV export of the verification results
 
@@ -23,9 +29,9 @@ Simulation :
 - Added watch expressions on the configurations
 - *go until true/false* for groups of watch expressions
 
-| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily.zip)]
-| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily.zip)]
-| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.6.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.6.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-0.0.6.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-0.0.6.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-0.0.6.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-0.0.6.zip)]
 
 # v0.0.5
 
