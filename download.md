@@ -6,9 +6,9 @@ order: 2
 
 # Daily Build
 
-| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily.zip)]
-| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily.zip)]
-| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily.zip)]
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily-19.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily-19.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily-19.zip)]
 
 # v0.0.6
 
