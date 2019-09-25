@@ -11,7 +11,7 @@ order: 6
 |
 
 | ![Luka](/images/people/luka.png){:class="avatar"} Luka LE ROUX | ![Valentin](/images/people/valentin.jpg){:class="avatar"} [Valentin BESNARD](https://www.researchgate.net/profile/Valentin_Besnard)
-| ![Philippe](/images/people/Philippe.jpg){:class="avatar"} [Philippe DHAUSSY](http://www.ensta-bretagne.fr/dhaussy) |
+| ![Philippe](/images/people/Philippe.jpg){:class="avatar"} [Philippe DHAUSSY](http://www.ensta-bretagne.fr/dhaussy) | ![Emilien](/images/people/emilien.jpg){:class="avatar"} Emilien FOURNIER
 
 # Past Members
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: bare-metal-uml
+title: emi-uml
 order: 5
 ---
 
