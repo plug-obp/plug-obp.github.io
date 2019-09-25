@@ -6,12 +6,12 @@ order: 2
 
 # Daily Build
 
-| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-daily-19.zip)]
-| OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_h-daily-19.zip)]
-| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-simulator-mac-daily-19.zip)]
-| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_emi-mac-daily-19.zip)]
-| OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_remote-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_remote-mac-daily-19.zip)]
-| OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_remote_h-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2_remote_h-daily-19.zip)]
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-daily-19.zip)]
+| OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-daily-19.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-osx-daily-19.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-daily-19.zip)]
+| OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-daily-19.zip)]
+| OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-19.zip)]
 
 # v0.0.6
 
