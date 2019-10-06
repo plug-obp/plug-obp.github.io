@@ -7,8 +7,8 @@ order: 5
 ## An Embedded Model Interpreter for UML Models
 {: style="text-align: center"}
 
-Plug can also be used to analyze UML models through an Embedded Model Interpreter (EMI).
-This interpreter aims at simulating, verifying, and executing UML models with a unique implementation of the UML semantics. Simualtion and model-checking activities can be performed directly on the executable UML model running on the model interpreter by connecting Plug to this interpreter.
+OBP2 can also be used to analyze UML models through an Embedded Model Interpreter (EMI).
+This interpreter aims at simulating, verifying, and executing UML models with a unique implementation of the UML semantics. Simualtion and model-checking activities can be performed directly on the executable UML model running on the model interpreter by connecting OBP2 to this interpreter.
 This tool provides an execution platform running either with OS support on desktop computers or without OS (bare-metal) on resource constrained embedded targets (e.g., STM32). This model interpreter is developped in collaboration with our industrial partner Davidson ([https://www.davidson.fr/](https://www.davidson.fr/)).
 {: style="text-align: justify"}
 
@@ -36,8 +36,8 @@ The main cause of all these issues is the use of multiple definitions of the mod
 
 To tackle these issue, our approach relies on the use of an embedded model interpreter that encodes a single definition of the UML semantics for all activities: simulation, verification, and execution.
 The UML design model is directly loaded in the model interpreter at compile-time.
-This model can then be analyzed using the model-checker Plug by connecting this verification tool to the model interpreter through a dedicated communication interface.
-Plug can be used to simulate the UML model, explore the model state-space, detect deadlocks and verified LTL properties by model-checking.
+This model can then be analyzed using the model-checker OBP2 by connecting this verification tool to the model interpreter through a dedicated communication interface.
+OBP2 can be used to simulate the UML model, explore the model state-space, detect deadlocks and verified LTL properties by model-checking.
 Once verified, the same couple (model + interpreter) can be deployed on the embedded target of the actual system.
 {: style="text-align: justify"}
 
