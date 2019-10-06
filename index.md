@@ -18,7 +18,7 @@ The modular OBP2 infra-structure provides advanced tools to debug, simulate and 
 
 <video src="/images/obp2/demo.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
 
-OBP is a requirement verification environment, developed at ENSTA Bretagne. The main characteristics of this tool are:
+OBP is a requirement verification environment, developed at ENSTA Bretagne. The main characteristics are:
 
 - the extensibility of the verification engine, which enables seamless integration of domain specific formalisms like UML, BPMN, TLA+, Fiacre;
 - the integration of domain-specific omniscient debugging with model-checking, which bridge the gap between early model diagnosis and formal verification;
