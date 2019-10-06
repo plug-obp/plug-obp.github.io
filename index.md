@@ -12,11 +12,17 @@ order: 1
 **Simulator Daily**
 {: .download}
 
-**Modularity Meets xDSL Dynamics**
+**Modular Verification Meets xDSL Dynamics**
 
-The modular Plug infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
+The modular OBP2 infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
 <video src="/images/obp2/demo.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
+
+OBP is a requirement verification environment, developed at ENSTA Bretagne. The main characteristics of this tool are:
+
+- the extensibility of the verification engine, which enables seamless integration of domain specific formalisms like UML, BPMN, TLA+, Fiacre;
+- the integration of domain-specific omniscient debugging with model-checking, which bridge the gap between early model diagnosis and formal verification;
+- the capacity to decompose the verification problem, which, based on the Context-aware Verification approach, addresses the scalability issues in the context of industrial scale verification.
 
 <!-- 
 ![Verification View](/images/obp2/0.0.4/VerificationView.png){:height="600px" class="center-image"}
