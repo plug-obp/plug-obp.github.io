@@ -1,7 +1,7 @@
 ---
 layout: page
 title: team
-order: 6
+order: 4
 ---
 
 # Current Members
