@@ -1,0 +1,24 @@
+aliceInGarden	= |aInGarden|
+bobInGarden		= |bInGarden|
+
+exclusion  		= []!(aliceInGarden && bobInGarden)
+eventuallyOneInCS 	= []<>(aliceInGarden || bobInGarden)
+
+stopInCS = [] !|aInGarden|
+
+fairness 		= 
+	let
+		aliceFlagUP=|flagA |,
+		bobFlagUP=|flagB |
+	in 
+		 ([]  (  (aliceFlagUP -> (<> aliceInGarden) )
+		      && (bobFlagUP -> (<> bobInGarden))))  
+idling = let
+		aliceFlagUP=|flagA|,
+		bobFlagUP=|flagB|
+	in
+		([]  (!aliceFlagUP -> (![] aliceInGarden))
+		   && (!bobFlagUP -> (![] bobInGarden)) )
+infoften 		=  [] <> bobInGarden
+
+all = (exclusion & eventuallyOneInCS & fairness & idling)

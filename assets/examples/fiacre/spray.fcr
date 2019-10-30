@@ -1,0 +1,59 @@
+
+process ForestPatrol (&VisualDescription : bool) is
+states StartEvent1 , cf11, cf12, cf13, EndEvent1
+init to StartEvent1
+from StartEvent1
+	select
+		to EndEvent1
+	[]	VisualDescription := true; 
+		/*@{Report fire}*/ to EndEvent1
+	end
+	
+
+
+process OperationCenter(&VisualDescription1, &VisualDescription2, &VideoRecording, &ReportSpray, &OrderSpray : bool) is
+states StartEvent2 , cf21, cf22, cf23, EndEvent2
+init to StartEvent2
+from StartEvent2  
+	on (VisualDescription1); 
+	/*@{Collect information}*/  to cf21
+from cf21 /*@{Take tactical decisions}*/ to cf22
+from cf22 
+	ReportSpray := true;
+	OrderSpray := true;
+	/*@{Transmit orders}*/ to cf23
+from cf23 
+	on (VisualDescription2 and VideoRecording);
+	/*@{Collect post-operation information}*/ to EndEvent2
+
+process ForwardObserver(&ReportSpray, &GuidanceData, &VisualDescription : bool) is
+states StartEvent3 , cf31, EndEvent3
+init to StartEvent3
+from StartEvent3
+	on (ReportSpray); 
+	GuidanceData := true;
+	/*@Designate objective}*/ to cf31
+from cf31 
+	VisualDescription := true;
+	/*@{Confirm visual result}*/ to EndEvent3
+
+process AirTanker(&GuidanceData, &OrderSpray, &VideoRecording : bool) is
+states StartEvent4 , cf41, EndEvent4
+init to StartEvent4
+from StartEvent4  
+	on (GuidanceData and OrderSpray);
+	/*@Spray fire retardant}*/ to cf41
+from cf41 
+	VideoRecording := true;
+	/*@{Aerial observation}*/ to EndEvent4
+
+
+component sys is
+var VisualDescription1, VisualDescription2, ReportSpray, OrderSpray, VideoRecording, GuidanceData : bool
+par
+    ForestPatrol(&VisualDescription1)
+||  OperationCenter(&VisualDescription1, &VisualDescription2, &VideoRecording, &ReportSpray, &OrderSpray)
+||  ForwardObserver(&ReportSpray, &GuidanceData, &VisualDescription2)
+||  AirTanker(&GuidanceData, &OrderSpray, &VideoRecording)
+end
+sys

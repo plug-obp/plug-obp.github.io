@@ -1,0 +1,65 @@
+/*
+Peterson's algorithm is a concurrent programming algorithm for mutual exclusion 
+that allows two processes to share a single-use resource without conflict, using 
+only shared memory for communication. It was formulated by Gary Peterson in 1981 
+at the University of Rochester. While Peterson's original formulation worked with
+only two processes, the algorithm can be generalised for more than two, as 
+discussed in "Operating Systems Review, January 1990 ('Proof of a Mutual 
+Exclusion Algorithm', M Hofri)".
+
+see http://wapedia.mobi/en/Peterson%27s_algorithm
+
+The algorithm uses two variables, flag and turn. A flag value of true indicates 
+that the process wants to enter the critical section. The variable turn holds the 
+ID of the process whose turn it is. Entrance to the critical section is granted 
+for process P0 if P1 does not want to enter its critical section or if P1 has 
+given priority to P0 by setting turn to 0.
+*/
+
+type flags_t is array 2 of bool
+const alice : nat is 0
+const bob : nat is 1
+
+const UP : bool is true
+const DOWN : bool is false
+
+process Alice(&flags : flags_t, &turn:nat) is
+states I, W, CS
+init
+	to I
+from I
+	flags[alice] := UP;
+	turn := 1-alice;
+	/*@{a1}*/ to W
+from W
+	on ((turn = alice) or (not flags[bob]));
+	/*@{a2}*/ to CS
+from CS /*@dog in yard*/
+	flags[alice] := DOWN;
+	/*@{a3}*/ to I
+
+process Bob(&flags : flags_t, &turn:nat) is
+states I, W, CS
+init
+	to I
+from I
+	flags[bob] := UP;
+	turn := 1-bob;
+	/*@{b1}*/ to W
+from W
+	on ((turn = bob) or (not flags[alice]));
+	/*@{b2}*/ to CS
+from CS /*@dog in yard*/
+	flags[bob] := DOWN;
+	/*@{b3}*/ to I
+
+component sys is
+var
+	flags : flags_t,
+	turn : nat
+par
+	Alice(&flags, &turn)
+|| Bob(&flags, &turn)
+end
+
+sys

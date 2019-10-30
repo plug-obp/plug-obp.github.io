@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>alice_bob8</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>alice_bob0.tla</name>
+			<type>1</type>
+			<location>/Users/ciprian/Downloads/tla-play/alice_bob0.tla</location>
+		</link>
+		<link>
+			<name>alice_bob8.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/alice_bob8.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,1170 @@
+/* Change this to tweak the size of the exploration */
+
+const SIZE_eventPool_ControlPannel: 	int is 1
+const SIZE_eventPool_SystemCenter: 		int is 2
+const SIZE_eventPool_HealthMonitoring: 	int is 2
+const SIZE_eventPool_Actuation: 		int is 3
+const SIZE_eventPool_Car: 				int is 2
+
+/* Other constants and random stuff */
+
+const UNINITIALIZED: int is -1
+const SPEED_INCREMENT: int is 5
+
+type t_fifo_toContext is queue 1 of bool
+
+/* Stuff needed to handle the control pannel event pool */
+
+type t_event_ControlPannel is union
+	evtBtnStart		/* id: 0 */
+|	evtBtnStop		/* id: 1 */
+|	evtBtnResume	/* id: 2 */
+|	evtBtnSet		/* id: 3 */
+|	evtBtnInc		/* id: 4 */
+|	evtBtnDec		/* id: 5 */
+|	evtBtnDisengage	/* id: 6 */
+end union
+const NUMBER_OF_EVENT_ControlPannel: int is 7
+
+type t_eventPool_ControlPannel is queue SIZE_eventPool_ControlPannel of t_event_ControlPannel
+
+type t_mask_eventPool_ControlPannel is array NUMBER_OF_EVENT_ControlPannel of bool
+
+function preProcess_eventPool_ControlPannel (
+	eventPool: t_eventPool_ControlPannel,
+	deferMask: t_mask_eventPool_ControlPannel)
+	: t_eventPool_ControlPannel is
+var
+	defered: t_eventPool_ControlPannel := {||},
+	result: t_eventPool_ControlPannel := {||},
+	continue: bool := true
+begin
+	while (not (empty eventPool) and continue) do
+		case first eventPool of
+			evtBtnStart ->
+				if deferMask[0] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnStop ->
+				if deferMask[1] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnResume ->
+				if deferMask[2] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnSet ->
+				if deferMask[3] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnInc ->
+				if deferMask[4] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnDec ->
+				if deferMask[5] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBtnDisengage ->
+				if deferMask[6] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		end case
+	end while;
+	if not (empty eventPool) then
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end if;
+	while not (empty defered) do
+		result := enqueue(result, first defered);
+		defered := dequeue defered
+	end while;
+	while not (empty eventPool) do
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end while;
+	return result
+end
+
+/* Stuff needed to handle the system center event pool */
+
+type t_event_SystemCenter is union
+	evtPowerOn		/* id: 0 */
+|	evtPowerOff		/* id: 1 */
+|	evtResume		/* id: 2 */
+|	evtAck			/* id: 3 */
+|	evtNAck			/* id: 4 */
+|	evtDisengage	/* id: 5 */
+|	evtSet			/* id: 6 */
+|	evtInc			/* id: 7 */
+|	evtDec			/* id: 8 */
+end union
+const NUMBER_OF_EVENT_SystemCenter: int is 9
+
+type t_eventPool_SystemCenter is queue SIZE_eventPool_SystemCenter of t_event_SystemCenter
+
+type t_mask_eventPool_SystemCenter is array NUMBER_OF_EVENT_SystemCenter of bool
+
+function preProcess_eventPool_SystemCenter (
+	eventPool: t_eventPool_SystemCenter,
+	deferMask: t_mask_eventPool_SystemCenter)
+	: t_eventPool_SystemCenter is
+var
+	defered: t_eventPool_SystemCenter := {||},
+	result: t_eventPool_SystemCenter := {||},
+	continue: bool := true
+begin
+	while (not (empty eventPool) and continue) do
+		case first eventPool of
+			evtPowerOn ->
+				if deferMask[0] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtPowerOff	 ->
+				if deferMask[1] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtResume ->
+				if deferMask[2] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtAck ->
+				if deferMask[3] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtNAck ->
+				if deferMask[4] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDisengage ->
+				if deferMask[5] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtSet ->
+				if deferMask[6] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtInc ->
+				if deferMask[7] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDec ->
+				if deferMask[8] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		end case
+	end while;
+	if not (empty eventPool) then
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end if;
+	while not (empty defered) do
+		result := enqueue(result, first defered);
+		defered := dequeue defered
+	end while;
+	while not (empty eventPool) do
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end while;
+	return result
+end
+
+/* Stuff needed to handle the health monitoring event pool */
+
+type t_event_HealthMonitoring is union
+	evtEngageHM			/* id: 0 */
+|	evtDisengageHM		/* id: 1 */
+|	evtBrakePressed		/* id: 2 */
+|	evtClutchDepressed	/* id: 3 */
+|	evtAccelPressed		/* id: 4 */
+|	evtAccelReleased	/* id: 5 */
+|	evtSpeed of int		/* id: 6 */
+end union
+const NUMBER_OF_EVENT_HealthMonitoring: int is 7
+
+type t_eventPool_HealthMonitoring is queue SIZE_eventPool_HealthMonitoring of t_event_HealthMonitoring
+
+type t_mask_eventPool_HealthMonitoring is array NUMBER_OF_EVENT_HealthMonitoring of bool
+
+function preProcess_eventPool_HealthMonitoring (
+	eventPool: t_eventPool_HealthMonitoring,
+	deferMask: t_mask_eventPool_HealthMonitoring)
+	: t_eventPool_HealthMonitoring is
+var
+	defered: t_eventPool_HealthMonitoring := {||},
+	result: t_eventPool_HealthMonitoring := {||},
+	continue: bool := true
+begin
+	while (not (empty eventPool) and continue) do
+		case first eventPool of
+			evtEngageHM ->
+				if deferMask[0] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDisengageHM ->
+				if deferMask[1] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtBrakePressed ->
+				if deferMask[2] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtClutchDepressed->
+				if deferMask[3] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtAccelPressed	 ->
+				if deferMask[4] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtAccelReleased ->
+				if deferMask[5] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtSpeed any ->
+				if deferMask[6] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		end case
+	end while;
+	if not (empty eventPool) then
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end if;
+	while not (empty defered) do
+		result := enqueue(result, first defered);
+		defered := dequeue defered
+	end while;
+	while not (empty eventPool) do
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end while;
+	return result
+end
+
+/* Stuff needed to handle the Actuation event pool */
+
+type t_event_Actuation is union
+	evtRequestEngagement	/* id: 0 */
+|	evtDisengageActuation	/* id: 1 */
+|	evtResetActuation		/* id: 2 */
+|	evtPause				/* id: 3 */
+|	evtPauseEnd				/* id: 4 */
+|	evtSetA					/* id: 5 */
+|	evtIncA					/* id: 6 */
+|	evtDecA					/* id: 7 */
+|	evtSpeedA of int		/* id: 8 */
+end union
+const NUMBER_OF_EVENT_Actuation: int is 9
+
+type t_eventPool_Actuation is queue SIZE_eventPool_Actuation of t_event_Actuation
+
+type t_mask_eventPool_Actuation is array NUMBER_OF_EVENT_Actuation of bool
+
+function preProcess_eventPool_Actuation (
+	eventPool: t_eventPool_Actuation,
+	deferMask: t_mask_eventPool_Actuation)
+	: t_eventPool_Actuation is
+var
+	defered: t_eventPool_Actuation := {||},
+	result: t_eventPool_Actuation := {||},
+	continue: bool := true
+begin
+	while (not (empty eventPool) and continue) do
+		case first eventPool of
+			evtRequestEngagement ->
+				if deferMask[0] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDisengageActuation ->
+				if deferMask[1] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtResetActuation ->
+				if deferMask[2] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtPause ->
+				if deferMask[3] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtPauseEnd ->
+				if deferMask[4] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtSetA ->
+				if deferMask[5] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtIncA ->
+				if deferMask[6] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDecA ->
+				if deferMask[7] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtSpeedA any ->
+				if deferMask[8] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		end case
+	end while;
+	if not (empty eventPool) then
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end if;
+	while not (empty defered) do
+		result := enqueue(result, first defered);
+		defered := dequeue defered
+	end while;
+	while not (empty eventPool) do
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end while;
+	return result
+end
+
+/* Stuff needed to handle the Car event pool */
+
+type t_event_Car is union
+	evtSetSpeed of int		/* id: 0 */
+|	evtTick					/* id: 1 */
+|	evtIncreaseSpeed of int	/* id: 2 */
+|	evtDecreaseSpeed of int	/* id: 3 */
+end union
+const NUMBER_OF_EVENT_Car: int is 4
+
+type t_eventPool_Car is queue SIZE_eventPool_Car of t_event_Car
+
+type t_mask_eventPool_Car is array NUMBER_OF_EVENT_Car of bool
+
+function preProcess_eventPool_Car (
+	eventPool: t_eventPool_Car,
+	deferMask: t_mask_eventPool_Car)
+	: t_eventPool_Car is
+var
+	defered: t_eventPool_Car := {||},
+	result: t_eventPool_Car := {||},
+	continue: bool := true
+begin
+	while (not (empty eventPool) and continue) do
+		case first eventPool of
+			evtSetSpeed any ->
+				if deferMask[0] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtTick	 ->
+				if deferMask[1] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtIncreaseSpeed any ->
+				if deferMask[2] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		|	evtDecreaseSpeed any ->
+				if deferMask[3] then
+					defered := enqueue(defered, first eventPool);
+					eventPool := dequeue eventPool
+				else
+					continue := false
+				end if
+		end case
+	end while;
+	if not (empty eventPool) then
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end if;
+	while not (empty defered) do
+		result := enqueue(result, first defered);
+		defered := dequeue defered
+	end while;
+	while not (empty eventPool) do
+		result := enqueue(result, first eventPool);
+		eventPool := dequeue eventPool
+	end while;
+	return result
+end
+
+/* Control pannel behavior */
+
+process ControlPannel (& eventPool: t_eventPool_ControlPannel, & itsSystemCenter: t_eventPool_SystemCenter) is
+states
+	idle
+
+from idle
+	case empty eventPool of
+		false -> null
+	end case;
+	case full itsSystemCenter of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_ControlPannel(eventPool, [false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtBtnStart 	-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtPowerOn)
+	|	evtBtnStop 		-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtPowerOff)
+	|	evtBtnResume 	-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtResume)
+	|	evtBtnDisengage	-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtDisengage)
+	|	evtBtnSet		-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtSet)
+	|	evtBtnInc		-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtInc)
+	|	evtBtnDec		-> /* <internal> */ itsSystemCenter := enqueue(itsSystemCenter, evtDec)
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+/* System center behavior */
+
+process SystemCenter (& eventPool: t_eventPool_SystemCenter, & itsHealthMonitoring: t_eventPool_HealthMonitoring, & itsActuation: t_eventPool_Actuation) is
+states
+	off, idle, requestingEngagement, engaged
+
+init
+	to off
+
+from off
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_SystemCenter(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtPowerOn 		->
+			eventPool := dequeue eventPool;
+			to idle
+	|	evtPowerOff 	-> null
+	|	evtResume		-> null
+	|	evtAck			-> null
+	|	evtNAck			-> null
+	|	evtDisengage	-> null
+	|	evtSet			-> null
+	|	evtInc			-> null
+	|	evtDec			-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from idle
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_SystemCenter(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtPowerOn 		-> null
+	|	evtPowerOff 	->
+			eventPool := dequeue eventPool;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtResetActuation)
+			end case;
+			to off
+	|	evtResume		->
+			eventPool := dequeue eventPool;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtRequestEngagement)
+			end case;
+			to requestingEngagement
+	|	evtAck			-> null
+	|	evtNAck			-> null
+	|	evtDisengage	-> null
+	|	evtSet			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtSetA)
+			end case
+	|	evtInc			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtIncA)
+			end case
+	|	evtDec			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtDecA)
+			end case
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from requestingEngagement
+	case empty eventPool of
+		false -> null
+	end case;
+	/* evtPowerOff, evetDisengage / defer */
+	eventPool := preProcess_eventPool_SystemCenter(eventPool, [false, true, false, false, false, true, false, false, false]);
+	case first eventPool of
+		evtPowerOn		-> null
+	/* 	evtPowerOff 	/ defer */
+	|	evtResume		-> null
+	|	evtAck			->
+			eventPool := dequeue eventPool;
+			case full itsHealthMonitoring of
+				false -> itsHealthMonitoring := enqueue(itsHealthMonitoring, evtEngageHM)
+			end case;
+			to engaged
+	|	evtNAck			->
+			eventPool := dequeue eventPool;
+			to idle
+	/*	evtDisengage	/ defer */
+	|	evtSet			-> null
+	|	evtInc			-> null
+	|	evtDec			-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from engaged
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_SystemCenter(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtPowerOn		-> null
+	|	evtPowerOff		->
+			eventPool := dequeue eventPool;
+			case full itsHealthMonitoring of
+				false -> itsHealthMonitoring := enqueue(itsHealthMonitoring, evtDisengageHM)
+			end case;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtDisengageActuation)
+			end case;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtResetActuation)
+			end case;
+			to off		
+	|	evtResume		-> null
+	|	evtAck			-> null
+	|	evtNAck			-> null
+	|	evtDisengage	->
+			eventPool := dequeue eventPool;
+			case full itsHealthMonitoring of
+				false -> itsHealthMonitoring := enqueue(itsHealthMonitoring, evtDisengageHM)
+			end case;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtDisengageActuation)
+			end case;
+			to idle				
+	|	evtSet			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtSetA)
+			end case
+	|	evtInc			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtIncA)
+			end case
+	|	evtDec			->
+			/* <internal> */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtDecA)
+			end case
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+/* Health monitoring behavior */
+
+process HealthMonitoring (& eventPool: t_eventPool_HealthMonitoring, & itsSystemCenter: t_eventPool_SystemCenter, & itsActuation: t_eventPool_Actuation) is
+states
+	disengaged, engaged, disengageRequested
+var
+	/* @ltt */
+	speed: int := -1
+
+init
+	to disengaged
+	
+from disengaged
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_HealthMonitoring(eventPool, [false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtEngageHM			->
+			eventPool := dequeue eventPool;
+			to engaged
+	|	evtDisengageHM		-> null
+	|	evtBrakePressed		-> null
+	|	evtClutchDepressed	-> null
+	|	evtAccelPressed		-> null
+	|	evtAccelReleased	-> null
+	|	evtSpeed speed		-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from engaged
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_HealthMonitoring(eventPool, [false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtEngageHM			-> null
+	|	evtDisengageHM		->
+			eventPool := dequeue eventPool;
+			to disengaged
+	|	evtBrakePressed		->
+			eventPool := dequeue eventPool;
+			case full itsSystemCenter of
+				false -> itsSystemCenter := enqueue(itsSystemCenter, evtDisengage)
+			end case;
+			to disengageRequested
+	|	evtClutchDepressed	->
+			eventPool := dequeue eventPool;
+			case full itsSystemCenter of
+				false -> itsSystemCenter := enqueue(itsSystemCenter, evtDisengage)
+			end case;
+			to disengageRequested
+	|	evtAccelPressed		->
+			/* internal */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtPause)
+			end case
+	|	evtAccelReleased	->
+			/* internal */
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtPauseEnd)
+			end case
+	|	evtSpeed speed		->
+			eventPool := dequeue eventPool;
+			/* decision node */
+			if (speed < 40 or speed > 180) then
+				case full itsSystemCenter of
+					false -> itsSystemCenter := enqueue(itsSystemCenter, evtDisengage)
+				end case;
+				to disengageRequested
+			else
+				to engaged
+			end if
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from disengageRequested
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_HealthMonitoring(eventPool, [false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtEngageHM			-> null
+	|	evtDisengageHM		->
+			eventPool := dequeue eventPool;
+			to disengaged
+	|	evtBrakePressed		-> null
+	|	evtClutchDepressed	-> null
+	|	evtAccelPressed		-> null
+	|	evtAccelReleased	-> null
+	|	evtSpeed speed		-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+/* Actuation behavior */
+
+process Actuation (& eventPool: t_eventPool_Actuation, & itsSystemCenter: t_eventPool_SystemCenter, & itsCar: t_eventPool_Car) is
+states
+	unSet, unsetSetting, set, setSetting, engaged, engagedSetting, paused, pausedSetting
+var
+	/* @ltt */
+	speed: int := -1,
+	setPointSpeed: int
+	
+init
+	setPointSpeed := UNINITIALIZED;
+	to unSet
+	
+from unSet
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	->
+			/* <internal> */
+			case full itsSystemCenter of
+				false -> itsSystemCenter := enqueue(itsSystemCenter, evtNAck)
+			end case
+	|	evtDisengageActuation	-> null
+	|	evtResetActuation		-> null
+	|	evtPause				-> null
+	|	evtPauseEnd				-> null
+	|	evtSetA					->
+			eventPool := dequeue eventPool;
+			to unsetSetting
+	|	evtIncA					-> null
+	|	evtDecA					-> null
+	|	evtSpeedA speed			-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+from unsetSetting
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [true, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+	/*	evtRequestEngagement	/ defer */
+		evtDisengageActuation	-> null
+	|	evtResetActuation		->
+			eventPool := dequeue eventPool;
+			setPointSpeed := UNINITIALIZED;
+			to unSet
+	|	evtPause				-> null
+	|	evtPauseEnd				-> null
+	|	evtSetA					-> null
+	|	evtIncA					-> null
+	|	evtDecA					-> null
+	|	evtSpeedA speed			->
+			eventPool := dequeue eventPool;
+			/* decision node */
+			if (speed < 40 or speed > 180) then
+				setPointSpeed := UNINITIALIZED;
+				to unSet
+			else
+				setPointSpeed := speed;
+				to set
+			end if
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from set
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	->
+			eventPool := dequeue eventPool;
+			case full itsSystemCenter of
+				false -> itsSystemCenter := enqueue(itsSystemCenter, evtAck)
+			end case;
+			to engaged
+	|	evtDisengageActuation	-> null
+	|	evtResetActuation		->
+			eventPool := dequeue eventPool;
+			setPointSpeed := UNINITIALIZED;
+			to unSet
+	|	evtPause				-> null
+	|	evtPauseEnd				-> null
+	|	evtSetA					->
+			eventPool := dequeue eventPool;
+			to setSetting
+	|	evtIncA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed + SPEED_INCREMENT;
+			if setPointSpeed > 180 then
+				setPointSpeed := 180
+			end if
+	|	evtDecA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed - SPEED_INCREMENT;
+			if setPointSpeed < 40 then
+				setPointSpeed := 40
+			end if
+	|	evtSpeedA speed			-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from setSetting
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	->
+			eventPool := dequeue eventPool;
+			case full itsSystemCenter of
+				false -> itsSystemCenter := enqueue(itsSystemCenter, evtAck)
+			end case;
+			to engagedSetting
+	|	evtDisengageActuation	-> null
+	|	evtResetActuation		->
+			eventPool := dequeue eventPool;
+			setPointSpeed := UNINITIALIZED;
+			to unSet
+	|	evtPause				-> null
+	|	evtPauseEnd				-> null
+	|	evtSetA					-> null
+	|	evtIncA					-> null
+	|	evtDecA					-> null
+	|	evtSpeedA speed			->
+			eventPool := dequeue eventPool;
+			/* decision node */
+			if (speed < 40 or speed > 180) then
+				to set
+			else
+				setPointSpeed := speed;
+				to set
+			end if			
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from engaged
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	-> null
+	|	evtDisengageActuation	->
+			eventPool := dequeue eventPool;
+			to set
+	|	evtResetActuation		-> null
+	|	evtPause				->
+			eventPool := dequeue eventPool;
+			to paused
+	|	evtPauseEnd				-> null
+	|	evtSetA					->
+			eventPool := dequeue eventPool;
+			to engagedSetting
+	|	evtIncA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed + SPEED_INCREMENT;
+			if setPointSpeed > 180 then
+				setPointSpeed := 180
+			end if
+	|	evtDecA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed - SPEED_INCREMENT;
+			if setPointSpeed < 40 then
+				setPointSpeed := 40
+			end if
+	|	evtSpeedA speed			->
+			eventPool := dequeue eventPool;
+			/* Decision node */
+			if speed < setPointSpeed then
+				case full itsCar of
+					false -> itsCar := enqueue(itsCar, evtIncreaseSpeed (setPointSpeed - speed))
+				end case
+			elsif speed > setPointSpeed then
+				case full itsCar of
+					false -> itsCar := enqueue(itsCar, evtDecreaseSpeed (speed - setPointSpeed))
+				end case
+			end if;
+			to engaged
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from engagedSetting
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	-> null
+	|	evtDisengageActuation	->
+			eventPool := dequeue eventPool;
+			to setSetting
+	|	evtResetActuation		-> null
+	|	evtPause				->
+			eventPool := dequeue eventPool;
+			to pausedSetting
+	|	evtPauseEnd				-> null
+	|	evtSetA					-> null
+	|	evtIncA					-> null
+	|	evtDecA					-> null
+	|	evtSpeedA speed			->
+			eventPool := dequeue eventPool;
+			/* decision node */
+			if (speed < 40 or speed > 180) then
+				to engaged
+			else
+				setPointSpeed := speed;
+				to engaged
+			end if	
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from paused
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	-> null
+	|	evtDisengageActuation	->
+			eventPool := dequeue eventPool;
+			to set
+	|	evtResetActuation		-> null
+	|	evtPause				-> null
+	|	evtPauseEnd				->
+			eventPool := dequeue eventPool;
+			to engaged
+	|	evtSetA					->
+			eventPool := dequeue eventPool;
+			to pausedSetting
+	|	evtIncA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed + SPEED_INCREMENT;
+			if setPointSpeed > 180 then
+				setPointSpeed := 180
+			end if
+	|	evtDecA					->
+			/* <internal> */
+			setPointSpeed := setPointSpeed - SPEED_INCREMENT;
+			if setPointSpeed < 40 then
+				setPointSpeed := 40
+			end if
+	|	evtSpeedA speed			-> null
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+	
+from pausedSetting
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Actuation(eventPool, [false, false, false, false, false, false, false, false, false]);
+	case first eventPool of
+		evtRequestEngagement	-> null
+	|	evtDisengageActuation	->
+			eventPool :=  dequeue eventPool;
+			to setSetting
+	|	evtResetActuation		-> null
+	|	evtPause				-> null
+	|	evtPauseEnd				->
+			eventPool := dequeue eventPool;
+			to engagedSetting
+	|	evtSetA					-> null
+	|	evtIncA					-> null
+	|	evtDecA					-> null
+	|	evtSpeedA speed			->
+			eventPool := dequeue eventPool;
+			/* decision node */
+			if (speed < 40 or speed > 180) then
+				to paused
+			else
+				setPointSpeed := speed;
+				to paused
+			end if	
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+/* Car behavior */
+
+process Car (& eventPool: t_eventPool_Car, & itsHealthMonitoring: t_eventPool_HealthMonitoring, & itsActuation: t_eventPool_Actuation) is
+states
+	idle
+var
+	/* @ltt */
+	speed: int := -1,
+	currentSpeed: int
+
+init
+	currentSpeed := 0;
+	to idle
+	
+from idle
+	case empty eventPool of
+		false -> null
+	end case;
+	eventPool := preProcess_eventPool_Car(eventPool, [false, false, false, false]);
+	case first eventPool of
+		evtSetSpeed speed		->
+			/* <internal> */
+			currentSpeed := speed
+	|	evtTick					->
+			/* <internal> */
+			case full itsHealthMonitoring of
+				false -> itsHealthMonitoring := enqueue(itsHealthMonitoring, evtSpeed currentSpeed)
+			end case;
+			case full itsActuation of
+				false -> itsActuation := enqueue(itsActuation, evtSpeedA currentSpeed)
+			end case
+	|	evtIncreaseSpeed speed	->
+			/* <internal> */
+			currentSpeed := currentSpeed + speed
+	|	evtDecreaseSpeed speed	->
+			/* <internal> */
+			currentSpeed := currentSpeed - speed
+	end case;
+	eventPool := dequeue eventPool;
+	loop
+
+/* User behavior */
+// Specific to this standalone version of the case-study
+
+process User (
+	& itsHealthMonitoring: t_eventPool_HealthMonitoring,
+	& itsControlPannel: t_eventPool_ControlPannel,
+	& itsCar : t_eventPool_Car,
+	& itsSystemCenter : t_eventPool_SystemCenter,
+	& itsActuation : t_eventPool_Actuation) is
+states
+	idle
+
+from idle
+	on (empty itsHealthMonitoring);
+	on (empty itsControlPannel);
+	on (empty itsCar);
+	on (empty itsSystemCenter);
+	on (empty itsActuation);
+	select
+		itsHealthMonitoring := enqueue(itsHealthMonitoring, evtBrakePressed)		/*@ evtBrakePressed */
+	[]	itsHealthMonitoring := enqueue(itsHealthMonitoring, evtClutchDepressed)		/*@ evtClutchDepressed */
+	[]	itsHealthMonitoring := enqueue(itsHealthMonitoring, evtAccelPressed)		/*@ evtAccelPressed */
+	[]	itsHealthMonitoring := enqueue(itsHealthMonitoring, evtAccelReleased)		/*@evtAccelReleased*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnStart)					/*@evtBtnStart*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnResume)					/*@evtBtnResume*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnSet)					/*@evtBtnSet*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnInc)					/*@evtBtnInc*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnDec)					/*@evtBtnDec*/
+	[]	itsControlPannel := enqueue(itsControlPannel, evtBtnDisengage)				/*@evtBtnDisengage*/
+	[]	itsCar := enqueue(itsCar, evtSetSpeed 0)									/*@evtSetSpeed 0*/
+	[]	itsCar := enqueue(itsCar, evtSetSpeed 25)									/*@evtSetSpeed 25*/
+	[]	itsCar := enqueue(itsCar, evtSetSpeed 80)									/*@evtSetSpeed 100*/
+	[]	itsCar := enqueue(itsCar, evtSetSpeed 120)									/*@evtSetSpeed 100*/
+	[]	itsCar := enqueue(itsCar, evtSetSpeed 200)									/*@evtSetSpeed 200*/
+	[]	itsCar := enqueue(itsCar, evtTick)											/*@evtTick*/
+	end;
+	to idle
+	
+/* Composition */
+
+/*
+process ControlPannel (& eventPool: t_eventPool_ControlPannel, & itsSystemCenter: t_eventPool_SystemCenter)
+process SystemCenter (& eventPool: t_eventPool_SystemCenter, & itsHealthMonitoring: t_eventPool_HealthMonitoring, & itsActuation: t_eventPool_Actuation)
+process HealthMonitoring (& eventPool: t_eventPool_HealthMonitoring, & itsSystemCenter: t_eventPool_SystemCenter, & itsActuation: t_eventPool_Actuation)
+process Actuation (& eventPool: t_eventPool_Actuation, & itsSystemCenter: t_eventPool_SystemCenter, & itsCar: t_eventPool_Car)
+process Car (& eventPool: t_eventPool_Car, & itsHealthMonitoring: t_eventPool_HealthMonitoring, & itsActuation: t_eventPool_Actuation)
+process User (
+	& itsHealthMonitoring: t_eventPool_HealthMonitoring,
+	& itsControlPannel: t_eventPool_ControlPannel,
+	& itsCar : t_eventPool_Car,
+	& itsSystemCenter : t_eventPool_SystemCenter,
+	& itsActuation : t_eventPool_Actuation)
+*/
+
+component CruiseControl is
+var
+	ControlPannel_1:		t_eventPool_ControlPannel,
+	SystemCenter_1: 		t_eventPool_SystemCenter,
+	HealthMonitoring_1: 	t_eventPool_HealthMonitoring,
+	Actuation_1: 			t_eventPool_Actuation,
+	Car_1: 					t_eventPool_Car
+init
+	ControlPannel_1 	:= {||};
+	SystemCenter_1		:= {||};
+	HealthMonitoring_1 	:= {||};
+	Actuation_1 		:= {||};
+	Car_1				:= {||}
+par
+	ControlPannel(		& ControlPannel_1, 		& SystemCenter_1)
+||	SystemCenter(		& SystemCenter_1, 		& HealthMonitoring_1,		& Actuation_1)
+||	HealthMonitoring(	& HealthMonitoring_1,	& SystemCenter_1,			& Actuation_1)
+||	Actuation(			& Actuation_1,			& SystemCenter_1,			& Car_1)
+||	Car(				& Car_1,				& HealthMonitoring_1,		& Actuation_1)
+||	User(				& HealthMonitoring_1,	& ControlPannel_1,			& Car_1,		& SystemCenter_1,	& Actuation_1)
+end
+
+CruiseControl
