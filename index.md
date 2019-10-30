@@ -16,6 +16,8 @@ order: 1
 
 The modular OBP2 infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
+![Overview](/images/overview.png){:height="600px" class="center-image"}
+
 <video src="/images/obp2/demo.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
 
 OBP is a requirement verification environment, developed at ENSTA Bretagne. The main characteristics are:
