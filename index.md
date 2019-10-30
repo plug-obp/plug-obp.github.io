@@ -16,7 +16,7 @@ order: 1
 
 The modular OBP2 infra-structure provides advanced tools to debug, simulate and model-check your DSL without any transformation.
 
-![Overview](/images/overview.png){:height="600px" class="center-image"}
+![Overview](/images/overview.png){:class="center-image"}
 
 <video src="/images/obp2/demo.mp4" width="730px" autoplay loop muted playsinline class="center-image"></video>
 
