@@ -5,6 +5,7 @@ github_username: plug-obp
 rss: rss
 google_analytics: UA-127726118-1
 show_downloads: false
+show_excerpts: true
 
 theme: minima
 
