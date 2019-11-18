@@ -47,4 +47,3 @@ Once verified, the same couple (model + interpreter) can be deployed on the embe
 
 * Examples of models written in tUML, a textual formalism for UML:
   * [Peterson algortihm](/assets/docs/AliceBobPeterson.tuml)
-[//]: # ([Level crossing](/assets/docs/LevelCrossing.tuml))
