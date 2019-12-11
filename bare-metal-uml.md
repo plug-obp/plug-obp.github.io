@@ -52,5 +52,5 @@ Once verified, the same couple (model + interpreter) can be deployed on the embe
 
 Example of an execution of our LOGO interpreter to draw a square.
 
-<video src="/assets/videos/logo_obp2.mp4" width="1440px" autoplay loop muted playsinline class="center-image"></video>
+<video src="/assets/videos/logo_obp2.mp4" width="720px" autoplay loop muted playsinline class="center-image"></video>
 
