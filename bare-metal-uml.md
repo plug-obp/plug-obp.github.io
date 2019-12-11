@@ -47,3 +47,10 @@ Once verified, the same couple (model + interpreter) can be deployed on the embe
 
 * Examples of models written in tUML, a textual formalism for UML:
   * [Peterson algortihm](/assets/docs/AliceBobPeterson.tuml)
+
+### An Interpreter for the LOGO language
+
+Example of an execution of our LOGO interpreter to draw a square.
+
+<video src="/assets/videos/logo_obp2.mp4" width="720px" autoplay loop muted playsinline class="center-image"></video>
+
