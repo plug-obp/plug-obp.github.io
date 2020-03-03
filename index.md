@@ -4,11 +4,11 @@ title: home
 order: 1
 ---
 
-- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.6.zip)
+- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-0.0.8.zip)
 **Version 0.0.6**
-- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-daily-19.zip)
+- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-daily-20.zip)
 **OBP2 Daily**
-- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-daily-19.zip)
+- [Download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-daily-20.zip)
 **Simulator Daily**
 {: .download}
 

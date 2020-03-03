@@ -5,3 +5,5 @@ Gemfile.lock
 .jekyll-metadata
 assets/examples/tla/alice_bob_mutex/*/*SnapShot_*
 assets/examples/tla/alice_bob_mutex/**/*.out
+assets/examples/**/*.class
+assets/examples/**/*.java

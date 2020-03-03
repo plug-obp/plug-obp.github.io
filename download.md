@@ -6,12 +6,23 @@ order: 2
 
 # Daily Build
 
-| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-daily-19.zip)]
-| OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-daily-19.zip)]
-| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-osx-daily-19.zip)]
-| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-daily-19.zip)]
-| OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-daily-19.zip)]
-| OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-19.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-19.zip)]
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-daily-20.zip)]
+| OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-daily-20.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-osx-daily-20.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-daily-20.zip)]
+| OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-daily-20.zip)]
+| OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]
+| OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]
+
+# v0.0.8
+
+| OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-0.0.8.zip)]
+| OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-0.0.8.zip)]
+| Simulator | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-simulator-osx-0.0.8.zip)]
+| OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-0.0.8.zip)]
+| OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-0.0.8.zip)]
+| OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]
+| OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]
 
 # v0.0.6
 
