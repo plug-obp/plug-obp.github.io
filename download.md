@@ -15,6 +15,7 @@ order: 2
 | OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]
 
 # v0.0.8
+[*3 march 2018*]
 
 | OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-0.0.8.zip)]
 | OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-0.0.8.zip)]
@@ -24,7 +25,8 @@ order: 2
 | OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]
 | OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]
 
-# v0.0.6
+# v0.0.6 
+[*8 december 2018*]
 
 Refactoring of the user interface.
 Define a model in the editor directly (for textual specification languages only)
@@ -54,6 +56,7 @@ Various small improvements
 | OBP2 v0.0.5 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-0.0.5.zip)] | [[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=plug-obp2-mac-0.0.5.zip)]
 
 # v0.0.4
+[*16 avril 2018*]
 
 Initial model-checking interface and simulation improvements
 
