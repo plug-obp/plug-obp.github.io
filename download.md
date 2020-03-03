@@ -12,10 +12,14 @@ order: 2
 | OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-daily-20.zip)]
 | OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-daily-20.zip)]
 | OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]
-| OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-daily-20.zip)]
 
 # v0.0.8
 [*3 march 2018*]
+
+Command line interface
+Improved GUI : gray-out fired transitions
+Added support for state-event LTL
+Trim counter-example
 
 | OBP2 | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-osx-0.0.8.zip)]
 | OBP2 Headless| [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-headless-0.0.8.zip)]
@@ -23,7 +27,6 @@ order: 2
 | OBP2 EMI | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-emi-osx-0.0.8.zip)]
 | OBP2 Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-osx-0.0.8.zip)]
 | OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-0.0.8.zip)]
-| OBP2 Headless VeriMoB | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-verimob-0.0.8.zip)]
 
 # v0.0.6 
 [*8 december 2018*]
