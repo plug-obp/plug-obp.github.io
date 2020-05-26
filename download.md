@@ -14,7 +14,7 @@ order: 2
 | OBP2 Headless Remote | [[download](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]|[[osx](https://bintray.com/plug-obp/distributions/download_file?file_path=obp2-remote-headless-daily-20.zip)]
 
 # v0.0.8
-[*3 march 2018*]
+[*3 march 2020*]
 
 Command line interface
 Improved GUI : gray-out fired transitions
