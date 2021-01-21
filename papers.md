@@ -4,6 +4,7 @@ title: papers
 order: 3
 ---
 
+| ![thesis](/images/thesis-logo.png){:class="paper-icon"} V. Besnard, "**EMI: Une approche pour unifier l'analyse et l'exécution embarquée à l'aide d'un interpréteur de modèles pilotable**", Application aux modèles UML des systèmes embarqués, *Ph.D. Thesis*, Dec. 2020. [[PDF]](/assets/papers/manuscrit-Valentin-Besnard.pdf) [[slides]](/assets/papers/soutenance-Valentin-Besnard.pdf)
 | ![paper](/images/paper-logo.png){:class="paper-icon"} M. Brumbulli, E. Gaudin, C. Teodorov, "**Identifying unreachable paths in BPMN models**", *Complex Systems Design & Management (CSD&M'20)*, Dec. 2020, Virtual event, Paris. [to appear]
 | ![paper](/images/paper-logo.png){:class="paper-icon"} F. Jouault, V. Besnard, T. Le Calvar, C. Teodorov, M. Brun, J. Delatour,  "**Designing, Animating, and Verifying Partial UML Models**", *23rd International Conference on Model Driven Engineering Languages and Systems (MODELS 2020)*, Oct 2020, Virtual event, Canada. [[DOI]](https://dl.acm.org/doi/10.1145/3365438.3410967)
 | ![paper](/images/paper-logo.png){:class="paper-icon"} V. Besnard, F. Jouault, M. Brun, C. Teodorov, P. Dhaussy, J. Delatour, "**Modular Deployment of UML Models for V&V Activities and Embedded Execution**", *17th Workshop on Model-Driven Engineering Verification & Validation (MoDeVVa'20)*, Oct 2020, Virtual Event, Canada. [[PDF]](/assets/papers/modevva-2020.pdf) [[slides]](/assets/papers/modevva-2020_slides.pdf)
