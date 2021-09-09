@@ -10,7 +10,7 @@ order: 4
 :--:|:--------------:
 | ![Luka Le Roux](/images/people/luka.png){:class="avatar"} Luka LE ROUX  | ![Emilien](/images/people/emilien.jpg){:class="avatar"} Emilien FOURNIER
 | ![Matthias Pasquier](/images/people/matthias_pasquier.jpeg){:class="avatar"} Matthias Pasquier
-| ![Frederic Jouault](frederic_jouault.jpeg) Frédéric Jouault | Matthias Brun
+| ![Frederic Jouault](frederic_jouault.jpeg){:class="avatar"} Frédéric Jouault | ![Matthias Brun](matthias_brun.jpeg){:class="avatar"} Matthias Brun
 
 # Past Members
 
