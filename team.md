@@ -13,6 +13,7 @@ order: 4
 | Frédéric Jouault | Matthias Brun
 
 # Past Members
+
 | ![Valentin](/images/people/valentin.jpg){:class="avatar"} [Valentin BESNARD](https://www.researchgate.net/profile/Valentin_Besnard)
 | ![Philippe](/images/people/Philippe.jpg){:class="avatar"} [Philippe DHAUSSY](http://www.ensta-bretagne.fr/dhaussy)
 | ![Jean-Charles](/images/people/jean-charles.jpeg){:class="avatar"} [Jean-Charles ROGER](https://www.linkedin.com/in/jeancharlesroger)
