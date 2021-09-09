@@ -6,11 +6,12 @@ order: 4
 
 # Current Members
 
-| ![Cip](/images/people/cip.jpeg){:class="avatar"} [Ciprian TEODOROV](http://www.ensta-bretagne.fr/teodorov) 
+| ![Cip](/images/people/cip.jpeg){:class="avatar"} [Ciprian TEODOROV](http://www.ensta-bretagne.fr/teodorov)
 :--:|:--------------:
+| ![Frederic Jouault](/images/people/frederic_jouault.jpeg){:class="avatar"} Frédéric Jouault | ![Matthias Brun](/images/people/matthias_brun.jpeg){:class="avatar"} Matthias Brun
 | ![Luka Le Roux](/images/people/luka.png){:class="avatar"} Luka LE ROUX  | ![Emilien](/images/people/emilien.jpg){:class="avatar"} Emilien FOURNIER
 | ![Matthias Pasquier](/images/people/matthias_pasquier.jpeg){:class="avatar"} Matthias Pasquier
-| ![Frederic Jouault](/images/people/frederic_jouault.jpeg){:class="avatar"} Frédéric Jouault | ![Matthias Brun](/images/people/matthias_brun.jpeg){:class="avatar"} Matthias Brun
+
 
 # Past Members
 
