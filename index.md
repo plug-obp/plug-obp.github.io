@@ -4,11 +4,11 @@ title: home
 order: 1
 ---
 
-- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-0.0.8.zip)
-**Version 0.0.8**
-- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-daily-20.zip)
+- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-1.0.0.zip)
+**Version 1.0.0**
+- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-1.0.0.zip)
 **OBP2 Daily**
-- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-daily-20.zip)
+- [Download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-1.0.0.zip)
 **Simulator Daily**
 {: .download}
 
