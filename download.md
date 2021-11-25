@@ -6,12 +6,27 @@ order: 2
 
 # Daily Build
 
-| OBP2 | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-osx-daily-20.zip)]
+| OBP2 | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-osx-1.0.0.zip)]
+| OBP2 Headless| [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-headless-1.0.0.zip)]
+| Simulator | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-osx-1.0.0.zip)]
+| OBP2 Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-osx-1.0.0.zip)]
+| OBP2 Headless Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-1.0.0.zip)]
+
+<!-- | OBP2 | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-osx-daily-20.zip)]
 | OBP2 Headless| [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-headless-daily-20.zip)]
 | Simulator | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-osx-daily-20.zip)]
 | OBP2 EMI | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-emi-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-emi-osx-daily-20.zip)]
 | OBP2 Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-osx-daily-20.zip)]
-| OBP2 Headless Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-daily-20.zip)]
+| OBP2 Headless Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-daily-20.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-daily-20.zip)] -->
+
+# v1.0.0
+[*25 novembre 2021*]
+
+| OBP2 | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-osx-1.0.0.zip)]
+| OBP2 Headless| [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-headless-1.0.0.zip)]
+| Simulator | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-simulator-osx-1.0.0.zip)]
+| OBP2 Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-osx-1.0.0.zip)]
+| OBP2 Headless Remote | [[download](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-1.0.0.zip)]|[[osx](http://mocs-artefacts.ensta-bretagne.fr/OBP2/distributions/obp2-remote-headless-1.0.0.zip)]
 
 # v0.0.8
 [*3 march 2020*]
