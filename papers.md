@@ -3,7 +3,10 @@ layout: page
 title: papers
 order: 3
 ---
-
+| ![paper](/images/paper-logo.png){:class="paper-icon"} V. Besnard, C. Teodorov, F. Jouault, M. Brun, P. Dhaussy, "**Unified verification and monitoring of executable UML specifications. A transformation-free approach**", *Software and Systems Modeling*, Springer Verlag, 2021, [[DOI]](https://doi.org/10.1007/s10270-021-00923-9)
+| ![paper](/images/paper-logo.png){:class="paper-icon"} F. Jouault, V. Sebille, V. Besnard, T. Le Calvar, C. Teodorov, M. Brun, J. Delatour, "**AnimUML as a UML Modeling and Verification Teaching Tool**", *24th International Conference on Model Driven Engineering Languages and Systems (MODELS 2021)*, Oct 2021, Virtual event, Fukuoka, Japan.
+| ![paper](/images/paper-logo.png){:class="paper-icon"} É. Fournier, C. Teodorov, L. Lagadec. "**Carnac: Algotihm Variability for Fast Swarm Model-Checking on FPGA**". *International Conference on Field-Programmable Logic and Applications (FPL'21)*, Aug 2021, Virtual event, Dresden, Germany.
+| ![paper](/images/paper-logo.png){:class="paper-icon"} H. Hnaini, L. Le Roux, J. Champeau, C. Teodorov. "**Security property modeling**". *7th International Conference on Information Systems Security and Privacy (ICISSP 2021)*, Feb 2021, Vienne - Virtual Online, Austria. pp.694-701.
 | ![thesis](/images/thesis-logo.png){:class="paper-icon"} V. Besnard, "**EMI: Une approche pour unifier l'analyse et l'exécution embarquée à l'aide d'un interpréteur de modèles pilotable**", Application aux modèles UML des systèmes embarqués, *Ph.D. Thesis*, Dec. 2020. [[PDF]](/assets/papers/manuscrit-Valentin-Besnard.pdf) [[slides]](/assets/papers/soutenance-Valentin-Besnard.pdf)
 | ![paper](/images/paper-logo.png){:class="paper-icon"} M. Brumbulli, E. Gaudin, C. Teodorov, "**Identifying unreachable paths in BPMN models**", *Complex Systems Design & Management (CSD&M'20)*, Dec. 2020, Virtual event, Paris. [to appear]
 | ![paper](/images/paper-logo.png){:class="paper-icon"} F. Jouault, V. Besnard, T. Le Calvar, C. Teodorov, M. Brun, J. Delatour,  "**Designing, Animating, and Verifying Partial UML Models**", *23rd International Conference on Model Driven Engineering Languages and Systems (MODELS 2020)*, Oct 2020, Virtual event, Canada. [[DOI]](https://dl.acm.org/doi/10.1145/3365438.3410967)
