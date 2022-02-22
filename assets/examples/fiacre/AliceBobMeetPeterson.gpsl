@@ -3,6 +3,13 @@ bobCS			= |{Bob}1@CS|
 exclusionI 		= []!(|{Alice}1@I| && |{Bob}1@I|)
 exclusion  		= []!(aliceCS && bobCS)
 not_deadlock = []!|deadlock|
+prio0 = states s0, s1;
+	initial s0;
+	accept s1;
+	s0 3 [true] s0;
+	s0 1 [!|{Bob}1@CS|] s1;	
+	s0 1 [!|{Alice}1@CS|] s1;
+	s1 [true] s1
 exclusionB0 		= 
 	states s0, s1;
 	initial s0;
