@@ -10,7 +10,7 @@ order: 3
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} F. Jouault, V. Sebille, V. Besnard, T. Le Calvar, C. Teodorov, M. Brun, J. Delatour, "**AnimUML as a UML Modeling and Verification Teaching Tool**", *24th International Conference on Model Driven Engineering Languages and Systems (MODELS 2021)*, Oct 2021, Virtual event, Fukuoka, Japan.
 
-![paper](/images/paper-logo.png){:class="paper-icon"} É. Fournier, C. Teodorov, L. Lagadec. "**Carnac: Algotihm Variability for Fast Swarm Model-Checking on FPGA**". *International Conference on Field-Programmable Logic and Applications (FPL'21)*, Aug 2021, Virtual event, Dresden, Germany.
+![paper](/images/paper-logo.png){:class="paper-icon"} É. Fournier, C. Teodorov, L. Lagadec. "**Carnac: Algorithm Variability for Fast Swarm Model-Checking on FPGA**". *International Conference on Field-Programmable Logic and Applications (FPL'21)*, Aug 2021, Virtual event, Dresden, Germany.
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} H. Hnaini, L. Le Roux, J. Champeau, C. Teodorov. "**Security property modeling**". *7th International Conference on Information Systems Security and Privacy (ICISSP 2021)*, Feb 2021, Vienne - Virtual Online, Austria. pp.694-701.
 
