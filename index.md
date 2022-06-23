@@ -20,7 +20,7 @@ The OBP2 infra-structure provides advanced tools to debug, simulate and model-ch
 
 OBP is a requirement verification environment, developed at ENSTA Bretagne. The main characteristics are:
 
-- the extensibility of the verification engine, which enables seamless integration of domain specific formalisms like [SDL-RT]({% post_url 2022-06-23-studio %}), [UML](bare-metal-uml), [BPMN]({% post_url 2019-11-15-process %}), TLA+, Fiacre;
+- the extensibility of the verification engine, which enables seamless integration of domain specific formalisms like [SDL-RT]({% post_url 2022-06-23-studio %}), [BPMN]({% post_url 2019-11-15-process %}), [AnimUML]({% post_url 2020-10-22-animuml%}), [EMI-UML](bare-metal-uml), TLA+, Fiacre;
 - the integration of domain-specific omniscient debugging with model-checking, which bridge the gap between early model diagnosis and formal verification;
 - the capacity to decompose the verification problem, which, based on the Context-aware Verification approach, addresses the scalability issues in the context of industrial scale verification;
 - Language independent property specifications based on the [GPSL formalism]({% post_url 2019-05-09-buchi %}).
