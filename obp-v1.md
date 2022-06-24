@@ -1,6 +1,6 @@
 ---
 layout: page
-title: obpcdl
+title: obpv1
 order: 6
 ---
 
@@ -14,16 +14,27 @@ OBP is an implementation of a CDL language translation in terms of formal langua
 
 ![fdf](../lib/cdl_transfo_with_obp.jpg)
 
+## Download OBP Explorer version 1.5.1
+
+*for Java 1.8, January 2018*
+
+- [OBP Explorer v.1.5.1 for Windows 64](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-win64.zip)
+- [OBP Explorer v.1.5.1 for Windows 32](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-win32.zip)
+- [OBP Explorer v.1.5.1 Batch](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-batch.zip)
+- [OBP Explorer v.1.5.1 for Linux 64 bits](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-unix64.tar.bz2)
+- [OBP Explorer v.1.5.1 for Linux 32 bits](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-unix32.tar.bz2)
+- [OBP Explorer v.1.5.1 for Mac OS 64 bit](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.1/OBP-1.5.1-osx64.zip)
+
 ## Download OBP Explorer version 1.5.0
 
 *for Java 1.8, January 2017*
 
-- [OBP Explorer v.1.5.0 for Windows 64](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-win64.zip)
-- [OBP Explorer v.1.5.0 for Windows 32](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-win32.zip)
-- [OBP Explorer v.1.5.0 Batch](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-batch.zip)
-- [OBP Explorer v.1.5.0 for Linux 64 bits](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-unix64.tar.bz2)
-- [OBP Explorer v.1.5.0 for Linux 32 bits](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-unix32.tar.bz2)
-- [OBP Explorer v.1.5.0 for Mac OS 64 bit](https://bintray.com/plug-obp/distributions/download_file?file_path=obp-1.5.0-osx64.zip)
+- [OBP Explorer v.1.5.0 for Windows 64](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-win64.zip)
+- [OBP Explorer v.1.5.0 for Windows 32](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-win32.zip)
+- [OBP Explorer v.1.5.0 Batch](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-batch.zip)
+- [OBP Explorer v.1.5.0 for Linux 64 bits](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-unix64.tar.bz2)
+- [OBP Explorer v.1.5.0 for Linux 32 bits](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-unix32.tar.bz2)
+- [OBP Explorer v.1.5.0 for Mac OS 64 bit](http://mocs-artefacts.ensta-bretagne.fr/OBP/1.5.0/OBP-1.5.0-osx64.zip)
 
 ## Documentation
 
