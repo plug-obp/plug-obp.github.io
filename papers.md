@@ -14,7 +14,7 @@ order: 3
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} H. Hnaini, L. Le Roux, J. Champeau, C. Teodorov. "**Security property modeling**". *7th International Conference on Information Systems Security and Privacy (ICISSP 2021)*, Feb 2021, Vienne - Virtual Online, Austria. pp.694-701.
 
-![thesis](/images/thesis-logo.png){:class="paper-icon"} V. BESNARD, "**EMI: Une approche pour unifier l'analyse et l'exécution embarquée à l'aide d'un interpréteur de modèles pilotable**", Application aux modèles UML des systèmes embarqués, *Ph.D. Thesis*, Dec. 2020. [[PDF]](/assets/papers/manuscrit-Valentin-Besnard.pdf) [[slides]](/assets/papers/soutenance-Valentin-Besnard.pdf)
+![thesis](/images/thesis-logo.png){:class="paper-icon"} V. BESNARD, "**EMI: Une approche pour unifier l'analyse et l'exécution embarquée à l'aide d'un interpréteur de modèles pilotable**", Application aux modèles UML des systèmes embarqués, *Ph.D. Thesis*, Dec. 2020. [[PDF]](/assets/papers/manuscrit-Valentin-Besnard.pdf) [[slides]](/assets/papers/soutenance-Valentin-Besnard.pdf) [[video]](https://youtu.be/85zxh2Ucnp8)
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} M. Brumbulli, E. Gaudin, C. Teodorov, "**Identifying unreachable paths in BPMN models**", *Complex Systems Design & Management (CSD&M'20)*, Dec. 2020, Virtual event, Paris.
 
