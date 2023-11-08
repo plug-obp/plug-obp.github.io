@@ -4,6 +4,25 @@ title: papers
 order: 3
 ---
 
+![paper](/images/paper-logo.pn){:class="paper-icon"} F. Jouault, V. Besnard, M. Brun, T. Le Calvar, F. Chhel, M. Clavreul, J. Delatour, M. Méré, M. Pasquier, C. Teodorov, "**AnimUML: A Practical Tool for Partial Model Animation and Analysis**", *Science of Computer Programming*, Volume 232, 2024, 103050, ISSN 0167-6423,
+[[DOI]](https://doi.org/10.1016/j.scico.2023.103050)
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} M. Pasquier, C. Teodorov, F. Jouault, M. Brun, L. Le Roux, L. Lagadec, "**Temporal Breakpoints for Multiverse Debugging**", *SLE 2023: Proceedings of the 16th ACM SIGPLAN International Conference on Software Language Engineering*, October 2023, Pages 125–137, Cascais, Portugal, [[DOI]](https://doi.org/10.1145/3623476.3623526)
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} M Pasquier, C Teodorov, F Jouault, M Brun, L Lagadec, "**Debugging Paxos in the UML Multiverse**", *MODELS '22: Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings (MODELS-C/MoDeVVa)*, Oct, 2023,Västerås, Sweden.
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} M. Clavreul, F. Jouault, M. Méré, M. Brun, T. Le Calvar, M. Pasquier, C. Teodorov, "**Génération de correctifs pour les modèles partiels d'AnimUML**", *IHM / GL-IHM*, Rennes, 2023
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} M. Pasquier, C. Teodorov, F. Jouault, M. Brun, L. Lagadec, "**Débogage Multivers de Modèles UML**", *s 22ème journées des Approches Formelles dans l’Assistance au Développement de Logiciels (AFADL 2023)*, [[PDF]](https://inria.hal.science/hal-04179353/document#page=31)
+
+![thesis](/images/thesis-logo.png){:class="paper-icon"} C. Teodorov, "**G∀min∃: Exploring the Boundary Between Executable Specification Languages and Behavior Analysis Tools**, HDR Thesis, Université de Bretagne Occidentale (UBO), Brest. [[Link]](https://teodorov.github.io/hdr) [[PDF]](http://mocs-artefacts.ensta-bretagne.fr/papers/HDR/HDR_Teodorov.pdf) [[slides]](http://mocs-artefacts.ensta-bretagne.fr/papers/HDR/230402_HDR_Teodorov-slides.pdf)
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} M. Pasquier, C. Teodorov, F. Jouault, M. Brun, L. Le Roux, L. Lagadec, "**Practical Multiverse Debugging Through User-Defined Reductions: Application to UML Models**", *MODELS '22: Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems (MODELS'22)* October 2022, Pages 87–97, Montreal, Canada, [[DOI]](https://doi.org/10.1145/3550355.3552447)
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} F. Jouault, M. Méré, M. Brun, T. Le Calvar, M. Pasquier, C. Teodorov, "**From OCL-based model static analysis to quick fixes**", *MODELS '22: Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings (MODELS-C/OCL)*, October, 2022, Pages 889–893, Montreal, Canada, [[DOI]](https://doi.org/10.1145/3550356.3561562)
+
+![paper](/images/paper-logo.pn){:class="paper-icon"} F. Jouault, C. Teodorov, M. Brun, "**Smart Home Model Verification with AnimUML (Poster)**", *STAF 2022 Workshop MESS’22: International workshop on MDE for Smart IoT Systems*, July, 2022, Nantes, France.
+
 ![paper](/images/paper-logo.png){:class="paper-icon"} E. Fournier, C. Teodorov, L. Lagadec, "**Dolmen: FPGA Swarm for Safety and Liveness Verification**", *Software and Systems Modeling*, 2022 Design, Automation and Test in Europe Conference (DATE'22), 2022.
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} V. Besnard, C. Teodorov, F. Jouault, M. Brun, P. Dhaussy, "**Unified verification and monitoring of executable UML specifications. A transformation-free approach**", *Software and Systems Modeling*, Springer Verlag, 2021, [[DOI]](https://doi.org/10.1007/s10270-021-00923-9)
