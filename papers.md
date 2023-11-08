@@ -13,7 +13,7 @@ order: 3
 
 ![paper](/images/paper-logo.png){:class="paper-icon"} M. Clavreul, F. Jouault, M. Méré, M. Brun, T. Le Calvar, M. Pasquier, C. Teodorov, "**Génération de correctifs pour les modèles partiels d'AnimUML**", *IHM / GL-IHM*, Rennes, 2023
 
-![paper](/images/paper-logo.png){:class="paper-icon"} M. Pasquier, C. Teodorov, F. Jouault, M. Brun, L. Lagadec, "**Débogage Multivers de Modèles UML**", *s 22ème journées des Approches Formelles dans l’Assistance au Développement de Logiciels (AFADL 2023)*, [[PDF]](https://inria.hal.science/hal-04179353/document#page=31)
+![paper](/images/paper-logo.png){:class="paper-icon"} M. Pasquier, C. Teodorov, F. Jouault, M. Brun, L. Lagadec, "**Débogage Multivers de Modèles UML**", *22ème journées des Approches Formelles dans l’Assistance au Développement de Logiciels (AFADL 2023)*, [[PDF]](https://inria.hal.science/hal-04179353/document#page=31)
 
 ![hdr](/images/hdr-logo.png){:class="paper-icon"} C. Teodorov, "**G∀min∃: Exploring the Boundary Between Executable Specification Languages and Behavior Analysis Tools**, HDR, Université de Bretagne Occidentale (UBO), Brest. [[Link]](https://teodorov.github.io/hdr) [[PDF]](http://mocs-artefacts.ensta-bretagne.fr/papers/HDR/HDR_Teodorov.pdf) [[slides]](http://mocs-artefacts.ensta-bretagne.fr/papers/HDR/230402_HDR_Teodorov-slides.pdf)
 
