@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ker-SEVECO"
+title: "Lancement Projet Ker-SEVECO"
 categories: news
 author: Ciprian
 excerpt_separator: <!--more-->
