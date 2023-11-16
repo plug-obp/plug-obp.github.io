@@ -25,6 +25,7 @@ Les équipes de Kereval, Mobility Tech Green et l’ENSTA Bretagne ont lancé ce
 ### References externes
 
 - [article de Kereval](https://www.kereval.com/cybersecurite-des-vehicules-connectes/)
+- [article de Mobility Tech Green](https://www.mobilitytechgreen.com/blog/2022/11/24/telematique-cybersecurite/)
 - [article de l'ENSTA Bretagne](https://www.ensta-bretagne.fr/fr/nouveau-projet-de-recherche-en-cybersecurite-des-vehicules-connectes)
 - [article image-et-reseaux](https://www.images-et-reseaux.com/le-projet-ker-seveco-securite-de-vehicule-connecte-demarre-en-trombe/)
 - [article id4mobility](https://www.id4mobility.org/actualites/ker-seveco-la-cybersecurite-du-vehicule-communicant)
