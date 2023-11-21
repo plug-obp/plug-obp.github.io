@@ -4,6 +4,7 @@ title: "GPSL syntax: LTL & Buchi"
 permalink: /gpsl/
 categories: properties
 author: Ciprian
+notInMenu: true
 ---
 
 __Generic Property Specification Language__ (GPSL) is the language used by OBP2 for specifying the properties that should be verified during the analysis. Currently it supports Linear Temporal Logic and Buchi Automata specifications.
