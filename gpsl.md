@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GPSL syntax: LTL & Buchi"
-permalink: /overview/
+permalink: /gpsl/
 categories: properties
 author: Ciprian
 ---
