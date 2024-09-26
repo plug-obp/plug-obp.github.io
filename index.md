@@ -18,7 +18,7 @@ The OBP2 infra-structure provides advanced tools to debug, simulate and model-ch
 
 ![Overview](/images/220624_overview.svg){:class="center-image"}
 
-OBP (initially **O**bserver **B**ased **P**rover) is a formal verification environment for systems, designed at [ENSTA Bretagne](https://www.ensta-bretagne.fr/en), originally designed around the [Fiacre specification language](https://projects.laas.fr/fiacre/index.php) and a context-driven verification methodology. Since 2015, it has been re-architected to become a flexible software framework used not only for model-checking verification but also for animation, model debugging, and execution monitoring on real targets.
+OBP (initially **O**bserver **B**ased **P**rover) is a formal verification environment for systems, designed at [ENSTA Bretagne](https://www.ensta-bretagne.fr/en), originally designed around the [Fiacre specification language](https://projects.laas.fr/fiacre/index.php) and a context-driven verification methodology. Since 2015, it has been re-architected to become a **flexible software framework** used not only for **model-checking** verification but also for **animation**, **model debugging**, and **execution monitoring on real targets**.
 
 ### Main Characteristics:
 
